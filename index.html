@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twoje Imię | Portfolio 2026</title>
+    <title>Kacper Pawlaczyk | CV</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 </head>
 <body>
-
     <div class="lang-switch-wrapper">
         <span class="lang-text active" id="label-pl">PL</span>
         <label class="switch">
@@ -28,8 +27,11 @@
 
     <div class="loader"><div class="loader-text">0%</div></div>
 
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
+    <div class="custom-cursor">
+    <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L7 19L10 11L18 8L1 1Z" fill="currentColor"/>
+    </svg>
+</div>
 
     <div class="bg-container">
         <div class="geo-shape shape-1" data-speed="0.02"></div>
@@ -41,80 +43,305 @@
         <div class="geo-shape shape-7" data-speed="0.02"></div>
     </div>
 
-    <nav>
+    <nav class="desktop-nav">
         <a href="#home" class="nav-link hover-magnet" data-en="Home">Start</a>
-        <a href="#work" class="nav-link hover-magnet" data-en="Work">Projekty</a>
         <a href="#about" class="nav-link hover-magnet" data-en="About">O mnie</a>
+        <a href="#skills" class="nav-link hover-magnet" data-en="Skills">Umiejętności</a>
+        <a href="#experience" class="nav-link hover-magnet" data-en="Experience">Doświadczenie</a>
+        <a href="#education" class="nav-link hover-magnet" data-en="Education">Wykształcenie</a>
         <a href="#contact" class="nav-link hover-magnet" data-en="Contact">Kontakt</a>
     </nav>
 
+    <div class="mobile-menu-btn hover-magnet">
+        <div class="bar bar-1"></div>
+        <div class="bar bar-2"></div>
+    </div>
+
+    <div class="mobile-menu-overlay">
+        <div class="mobile-links">
+            <a href="#home" class="mobile-link" data-en="Home">Start</a>
+            <a href="#about" class="mobile-link" data-en="About">O mnie</a>
+            <a href="#skills" class="mobile-link" data-en="Skills">Umiejętności</a>
+            <a href="#experience" class="mobile-link" data-en="Experience">Doświadczenie</a>
+            <a href="#education" class="mobile-link" data-en="Education">Wykształcenie</a>
+            <a href="#contact" class="mobile-link" data-en="Contact">Kontakt</a>
+        </div>
+    </div>
+
     <section id="home" class="hero">
         <div class="hero-content">
-            <p class="anim-text" data-en="Hello, I'm Jan Kowalski">Cześć, nazywam się Jan Kowalski</p>
+            <p class="anim-text" data-en="Hello, I'm Kacper Pawlaczyk">Cześć, nazywam się Kacper Pawlaczyk</p>
             
-            <h1 class="anim-text" data-en="Crafting Digital<br><span style='color: var(--accent)'>Experiences</span>.">
-                Tworzę Cyfrowe<br><span style="color: var(--accent)">Doświadczenia</span>.
+            <h1 class="anim-text" data-en="Database<br><span style='color: var(--accent)'>Administrator</span>.">
+                Administruję<br><span style="color: var(--accent)">Bazami Danych</span>.
             </h1>
             
-            <p class="anim-text" data-en="Frontend Developer & UX Designer. Specializing in building immersive web of the future.">
-                Frontend Developer & UX Designer. Specjalizuję się w tworzeniu immersyjnych stron przyszłości.
+            <p class="anim-text" data-en="Mid IT Specialist. <br> Specializing in database management and maintenance">
+                Specjalista w Dziale IT. <br> Specjalizuję się w zarządzaniu i utrzymywaniu baz danych.
             </p>
-            
+<!--            
             <div style="margin-top: 30px;">
                 <a href="#work" class="cta-btn hover-magnet anim-text" data-en="View My Work">Zobacz moje prace</a>
             </div>
-        </div>
-    </section>
-
-    <section id="work">
-        <h2 class="section-title scroll-reveal" data-en="Selected Projects <span style='font-size: 1rem; color: var(--accent)'>// 2024-2026</span>">
-            Wybrane Projekty <span style="font-size: 1rem; color: var(--accent)">// 2024-2026</span>
-        </h2>
-        
-        <div class="card-container">
-            <div class="glass-card scroll-reveal">
-                <h3 data-en="Project Alpha">Projekt Alpha</h3>
-                <p style="color: #aaa; margin-bottom: 20px;" data-en="FinTech Platform powered by AI.">Platforma FinTech z użyciem AI.</p>
-                <div class="skills-wrapper" style="gap: 5px;">
-                    <span style="font-size: 12px; opacity: 0.7;">React</span>
-                    <span style="font-size: 12px; opacity: 0.7;">Node.js</span>
-                </div>
-            </div>
-            
-            <div class="glass-card scroll-reveal">
-                <h3 data-en="Neon Commerce">Neon Commerce</h3>
-                <p style="color: #aaa; margin-bottom: 20px;" data-en="3D Store for a fashion brand.">Sklep 3D dla marki odzieżowej.</p>
-                <div class="skills-wrapper" style="gap: 5px;">
-                    <span style="font-size: 12px; opacity: 0.7;">Three.js</span>
-                    <span style="font-size: 12px; opacity: 0.7;">WebGL</span>
-                </div>
-            </div>
+        -->
         </div>
     </section>
 
     <section id="about">
+        <h2 style="text-align:center; margin-bottom: 30px;" data-en="Something about me">Parę słów o mnie</h2>
         <div class="glass-card scroll-reveal" style="width: 100%;">
-            <h2 style="margin-bottom: 30px;" data-en="My Tech Stack">Mój Stack Technologiczny</h2>
             <div class="skills-wrapper">
-                <div class="skill-tag hover-magnet">JavaScript (ES6+)</div>
+                <div class="skill-tag hover-magnet" data-en="
+                IT Specialist with over two years of experience, combining professional work with engineering studies in Computer Science. 
+                <br><br>
+                I specialize in database administration and Linux server management, ensuring system optimization and performance.
+                <br><br>
+                Within a strategic corporate project, I serve as a Key-User and Local Administrator. Thanks to my responsible approach and composure, I was entrusted with the role of Lead Administrator for the key database. In my daily work, I prioritize efficient communication and the highest standards of task execution.
+                <br><br>
+                Outside of work, I maintain a work-life balance through sports and music, which serve as my getaway and a source of new energy.">
+                
+                Specjalista IT z ponad dwuletnim doświadczeniem, łączący pracę zawodową ze studiami inżynierskimi na kierunku Informatyka. 
+                <br><br>
+                Specjalizuję się w administracji bazami danych oraz zarządzaniu serwerami Linux, dbając o optymalizację i wydajność systemów.
+                <br><br>
+                W ramach strategicznego projektu firmy pełnię rolę Key-Usera oraz Administratora Lokalnego. Dzięki odpowiedzialnemu podejściu i opanowaniu, powierzono mi funkcję głównego administratora kluczowej bazy danych. W codziennej pracy stawiam na sprawną komunikację i najwyższe standardy realizacji zadań.
+                <br><br>
+                Poza pracą dbam o work-life balance poprzez sport i muzykę, które są moją odskocznią i źródłem nowej energii.
+            </div>
+                
+                <!--
                 <div class="skill-tag hover-magnet">React / Next.js</div>
                 <div class="skill-tag hover-magnet">TypeScript</div>
                 <div class="skill-tag hover-magnet">Three.js</div>
+                -->
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h1 class="scroll-reveal" style="text-align: center;" data-en="Let's make something<br>amazing.">
-            Zróbmy coś<br>niesamowitego.
-        </h1>
-        <div style="text-align: center; margin-top: 50px;">
-            <a href="mailto:kontakt@przyklad.pl" class="cta-btn hover-magnet scroll-reveal">
-                kontakt@przyklad.pl
-            </a>
+<section id="skills">
+    <h2 class="section-title scroll-reveal" style="text-align: center; margin-bottom: 60px;" data-en="Skills <span style='font-size: 1rem; color: var(--accent)'>// Hard/Soft</span>">
+            Umiejętności <span style="font-size: 1rem; color: var(--accent)">// Twarde/Miękkie</span>
+    </h2>
+        <div class="glass-card scroll-reveal" style="width: 100%;">
+            
+            
+            <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+                
+                <div>
+                    <h3 style="margin-bottom: 20px; color: var(--accent); font-size: 1.2rem;" data-en="Hard">
+                        Twarde
+                    </h3>
+                    <div class="skills-wrapper">
+                        <div class="skill-tag hover-magnet" data-en="PostgreSQL/MySQL">PostgreSQL/MySQL</div>
+                        <div class="skill-tag hover-magnet" data-en="SQL">SQL</div>
+                        <div class="skill-tag hover-magnet" data-en="DBMS: DBeaver/pgAdmin">DBMS: DBeaver/pgAdmin</div>
+                        
+                        <div class="skill-tag hover-magnet" data-en="Prometheus">Prometheus</div>
+                        <div class="skill-tag hover-magnet" data-en="Grafana">Grafana</div>
+                        <div class="skill-tag hover-magnet" data-en="Munin / Zabbix">Munin / Zabbix</div>
+                        
+                        <div class="skill-tag hover-magnet" data-en="Linux Server">Linux Server</div>
+                        <div class="skill-tag hover-magnet" data-en="Windows / MS365">Windows / MS365</div>
+                        <div class="skill-tag hover-magnet" data-en="HTML/CSS">HTML/CSS</div>
+                        <div class="skill-tag hover-magnet" data-en="OsTicket / Jira">OsTicket / Jira</div>
+                        
+                        <div class="skill-tag hover-magnet" data-en="Network Basics">Podstawy sieci</div>
+                        <div class="skill-tag hover-magnet" data-en="Hardware Maintenance">Serwis sprzętowy</div>
+                        
+
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="margin-bottom: 20px; color: var(--accent); font-size: 1.2rem;" data-en="Soft">
+                        Miękkie
+                    </h3>
+                    <div class="skills-wrapper">
+                        <div class="skill-tag hover-magnet" data-en="Analytical Skills">Zdolności analityczne</div>
+                        <div class="skill-tag hover-magnet" data-en="Fast Learner">Szybkie przyswajanie wiedzy</div>
+                        <div class="skill-tag hover-magnet" data-en="Problem Solving">Rozwiązywanie problemów</div>
+                        <div class="skill-tag hover-magnet" data-en="Teamwork">Praca zespołowa</div>
+                        <div class="skill-tag hover-magnet" data-en="Driving License Cat. B">Prawo jazdy kat. B</div>
+                        <div class="skill-tag hover-magnet" data-en="English B1/B2">J. angielski B1/B2</div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-        <footer style="position: absolute; bottom: 120px; width: 100%; text-align: center; opacity: 0.3; left: 0;">
-            &copy; 2026 Designed by You.
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title scroll-reveal" style="text-align: center; margin-bottom: 60px;" data-en="Experience <span style='font-size: 1rem; color: var(--accent)'>// Career Log</span>">
+            Doświadczenie <span style="font-size: 1rem; color: var(--accent)">// Historia Pracy</span>
+        </h2>
+
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date" data-en="2024 - Present">2024 - Obecnie</div>
+                <div class="timeline-content glass-card hover-magnet">
+                    <h3 data-en="Senior Frontend Developer">Senior Frontend Developer</h3>
+                    <h4 style="color: var(--text-muted); margin-bottom: 15px;" data-en="@ TechSolutions Inc.">@ TechSolutions Inc.</h4>
+                    <ul class="job-list">
+                        <li data-en="> Leading a team of 5 developers building a React/Next.js SaaS platform.">> Zarządzanie 5-osobowym zespołem budującym platformę SaaS w React/Next.js.</li>
+                        <li data-en="> Optimization of rendering performance (Core Web Vitals +30%).">> Optymalizacja wydajności renderowania (Core Web Vitals +30%).</li>
+                        <li data-en="> Implementation of CI/CD pipelines and automated testing.">> Wdrożenie pipeline'ów CI/CD i testów automatycznych.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date" data-en="2022 - 2024">2022 - 2024</div>
+                <div class="timeline-content glass-card hover-magnet">
+                    <h3 data-en="Fullstack Developer">Fullstack Developer</h3>
+                    <h4 style="color: var(--text-muted); margin-bottom: 15px;" data-en="@ CreativeAgency">@ CreativeAgency</h4>
+                    <ul class="job-list">
+                        <li data-en="> Developing interactive 3D websites using Three.js and WebGL.">> Tworzenie interaktywnych stron 3D przy użyciu Three.js i WebGL.</li>
+                        <li data-en="> Backend development in Node.js (Express) and PostgreSQL database design.">> Rozwój backendu w Node.js (Express) i projektowanie bazy PostgreSQL.</li>
+                        <li data-en="> Client communication and technical requirement analysis.">> Komunikacja z klientem i analiza wymagań technicznych.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date" data-en="2020 - 2022">2020 - 2022</div>
+                <div class="timeline-content glass-card hover-magnet">
+                    <h3 data-en="Junior Web Developer">Junior Web Developer</h3>
+                    <h4 style="color: var(--text-muted); margin-bottom: 15px;" data-en="@ StartUp House">@ StartUp House</h4>
+                    <ul class="job-list">
+                        <li data-en="> Creating responsive landing pages based on Figma designs.">> Tworzenie responsywnych landing page'y na podstawie projektów w Figmie.</li>
+                        <li data-en="> Bug fixing and maintenance of existing WordPress systems.">> Naprawianie błędów i utrzymanie istniejących systemów WordPress.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<section id="education">
+        <h2 class="section-title scroll-reveal" style="text-align: center; margin-bottom: 60px;" data-en="Education <span style='font-size: 1rem; color: var(--accent)'>// Knowledge Base</span>">
+            Wykształcenie <span style="font-size: 1rem; color: var(--accent)">// Baza wiedzy</span>
+        </h2>
+
+        <div class="edu-container">
+            
+            <div class="edu-card glass-card hover-magnet scroll-reveal">
+                <div class="edu-year">2016 - 2020</div>
+                <div class="edu-content">
+                    <h3 data-en="Bachelor of Engineering: Computer Science">Inżynier: Informatyka</h3>
+                    <p data-en="Warsaw University of Technology">Politechnika Warszawska</p>
+                    <span class="edu-tag" data-en="Specialization: Software Engineering">Specjalizacja: Inżynieria Oprogramowania</span>
+                </div>
+                <div class="edu-icon">
+                    <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/>
+                        <polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="edu-card glass-card hover-magnet scroll-reveal">
+                <div class="edu-year">2023</div>
+                <div class="edu-content">
+                    <h3 data-en="Advanced React Patterns">Zaawansowane Wzorce React</h3>
+                    <p data-en="Frontend Masters / Online Course">Frontend Masters / Kurs Online</p>
+                </div>
+                <div class="edu-icon">
+                    <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/>
+                        <polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="edu-card glass-card hover-magnet scroll-reveal">
+                <div class="edu-year">2012 - 2016</div>
+                <div class="edu-content">
+                    <h3 data-en="IT Technician">Technik Informatyk</h3>
+                    <p data-en="Technical School No. 1">Zespół Szkół Technicznych nr 1</p>
+                </div>
+                <div class="edu-icon">
+                    <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/>
+                        <polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<section id="contact">
+        <h2 class="section-title scroll-reveal" style="text-align: center; margin-bottom: 60px;" data-en="Contact <span style='font-size: 1rem; color: var(--accent)'>// Connect</span>">
+            Kontakt <span style="font-size: 1rem; color: var(--accent)">// Połącz się</span>
+        </h2>
+
+        <div class="contact-hub glass-card scroll-reveal">
+            
+            <div class="hub-header">
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    <span data-en="Status: Open to work">Status: Otwarty na propozycje</span>
+                </div>
+                <h3 style="font-size: 2rem; margin-top: 15px;" data-en="Let's talk business.">Porozmawiajmy o konkretach.</h3>
+                <p style="color: var(--text-muted); margin-top: 10px;" data-en="Choose your preferred channel below.">Wybierz preferowany kanał komunikacji.</p>
+            </div>
+
+            <div class="contact-grid">
+                
+                <div class="contact-tile hover-magnet" id="tile-email">
+                    <div class="tile-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="M22 6L12 13L2 6"></path>
+                        </svg>
+                    </div>
+                    <div class="tile-content">
+                        <span class="tile-label" data-en="Email Address">Adres E-mail</span>
+                        <span class="tile-value" id="val-email">mail@example.com</span>
+                    </div>
+                    <div class="copy-indicator">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </div>
+                    <span class="copy-tooltip" data-en="Copied!">Skopiowano!</span>
+                </div>
+
+                <div class="contact-tile hover-magnet" id="tile-phone">
+                    <div class="tile-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12" y2="18"></line>
+                        </svg>
+                    </div>
+                    <div class="tile-content">
+                        <span class="tile-label" data-en="Phone Number">Numer Telefonu</span>
+                        <span class="tile-value" id="val-phone">+48 123 456 789</span>
+                    </div>
+                    <div class="copy-indicator">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </div>
+                    <span class="copy-tooltip" data-en="Copied!">Skopiowano!</span>
+                </div>
+
+            </div>
+
+            <div class="socials-row">
+                <a href="#" class="social-pill hover-magnet">LinkedIn</a>
+            </div>
+
+        </div>
+
+        <footer style="text-align: center; margin-top: 80px; opacity: 0.4; font-size: 0.9rem;">
+            &copy; 2026 Designed & Built by me.
         </footer>
     </section>
 
