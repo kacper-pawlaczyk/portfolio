@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twoje Imię | Portfolio 2026</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+
+    <div class="lang-switch-wrapper">
+        <span class="lang-text active" id="label-pl">PL</span>
+        <label class="switch">
+            <input type="checkbox" id="lang-toggle">
+            <span class="slider"></span>
+        </label>
+        <span class="lang-text" id="label-en">EN</span>
+    </div>
+
+    <div class="loader"><div class="loader-text">0%</div></div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="bg-container">
+        <div class="geo-shape shape-1" data-speed="0.02"></div>
+        <div class="geo-shape shape-2" data-speed="0.04"></div>
+        <div class="geo-shape shape-3" data-speed="0.06"></div>
+        <div class="geo-shape shape-4" data-speed="0.03"></div>
+        <div class="geo-shape shape-5" data-speed="0.03"></div>
+        <div class="geo-shape shape-6" data-speed="0.05"></div>
+        <div class="geo-shape shape-7" data-speed="0.02"></div>
+    </div>
+
+    <nav>
+        <a href="#home" class="nav-link hover-magnet" data-en="Home">Start</a>
+        <a href="#work" class="nav-link hover-magnet" data-en="Work">Projekty</a>
+        <a href="#about" class="nav-link hover-magnet" data-en="About">O mnie</a>
+        <a href="#contact" class="nav-link hover-magnet" data-en="Contact">Kontakt</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="anim-text" data-en="Hello, I'm Jan Kowalski">Cześć, nazywam się Jan Kowalski</p>
+            
+            <h1 class="anim-text" data-en="Crafting Digital<br><span style='color: var(--accent)'>Experiences</span>.">
+                Tworzę Cyfrowe<br><span style="color: var(--accent)">Doświadczenia</span>.
+            </h1>
+            
+            <p class="anim-text" data-en="Frontend Developer & UX Designer. Specializing in building immersive web of the future.">
+                Frontend Developer & UX Designer. Specjalizuję się w tworzeniu immersyjnych stron przyszłości.
+            </p>
+            
+            <div style="margin-top: 30px;">
+                <a href="#work" class="cta-btn hover-magnet anim-text" data-en="View My Work">Zobacz moje prace</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <h2 class="section-title scroll-reveal" data-en="Selected Projects <span style='font-size: 1rem; color: var(--accent)'>// 2024-2026</span>">
+            Wybrane Projekty <span style="font-size: 1rem; color: var(--accent)">// 2024-2026</span>
+        </h2>
+        
+        <div class="card-container">
+            <div class="glass-card scroll-reveal">
+                <h3 data-en="Project Alpha">Projekt Alpha</h3>
+                <p style="color: #aaa; margin-bottom: 20px;" data-en="FinTech Platform powered by AI.">Platforma FinTech z użyciem AI.</p>
+                <div class="skills-wrapper" style="gap: 5px;">
+                    <span style="font-size: 12px; opacity: 0.7;">React</span>
+                    <span style="font-size: 12px; opacity: 0.7;">Node.js</span>
+                </div>
+            </div>
+            
+            <div class="glass-card scroll-reveal">
+                <h3 data-en="Neon Commerce">Neon Commerce</h3>
+                <p style="color: #aaa; margin-bottom: 20px;" data-en="3D Store for a fashion brand.">Sklep 3D dla marki odzieżowej.</p>
+                <div class="skills-wrapper" style="gap: 5px;">
+                    <span style="font-size: 12px; opacity: 0.7;">Three.js</span>
+                    <span style="font-size: 12px; opacity: 0.7;">WebGL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="glass-card scroll-reveal" style="width: 100%;">
+            <h2 style="margin-bottom: 30px;" data-en="My Tech Stack">Mój Stack Technologiczny</h2>
+            <div class="skills-wrapper">
+                <div class="skill-tag hover-magnet">JavaScript (ES6+)</div>
+                <div class="skill-tag hover-magnet">React / Next.js</div>
+                <div class="skill-tag hover-magnet">TypeScript</div>
+                <div class="skill-tag hover-magnet">Three.js</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="scroll-reveal" style="text-align: center;" data-en="Let's make something<br>amazing.">
+            Zróbmy coś<br>niesamowitego.
+        </h1>
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="mailto:kontakt@przyklad.pl" class="cta-btn hover-magnet scroll-reveal">
+                kontakt@przyklad.pl
+            </a>
+        </div>
+        <footer style="position: absolute; bottom: 120px; width: 100%; text-align: center; opacity: 0.3; left: 0;">
+            &copy; 2026 Designed by You.
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
