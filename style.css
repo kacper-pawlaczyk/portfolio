@@ -348,165 +348,7 @@ input:checked + .slider:before {
     background-color: #000;
 }
 
-@media (max-width: 768px) {
-    .custom-cursor {
-        display: none;
-    }
 
-    * {
-        cursor: auto !important;
-    }
-
-    .shape-1 {
-        top: 5%;
-        left: -30%;
-        width: 90vw;
-        height: 90vw;
-        transform: rotate(20deg);
-    }
-
-    .shape-2 {
-        top: 60%;
-        right: -40%;
-        left: auto;
-        width: 110vw;
-        height: 110vw;
-        transform: rotate(40deg);
-    }
-
-    .shape-3 {
-        top: 130%;
-        left: -20%;
-        width: 80vw;
-        height: 80vw;
-        transform: rotate(10deg);
-    }
-
-    .shape-4 {
-        top: 200%;
-        right: -20%;
-        width: 70vw;
-        height: 70vw;
-    }
-
-    .shape-5 {
-        top: 280%;
-        left: -30%;
-        width: 90vw;
-        height: 90vw;
-    }
-
-    .shape-6 {
-        top: 360%;
-        right: -40%;
-        width: 100vw;
-        height: 100vw;
-    }
-
-    .shape-7 {
-        top: 450%;
-        left: 0%;
-        width: 120vw;
-        height: 120vw;
-    }
-
-    .desktop-nav {
-        display: none;
-    }
-
-    .mobile-menu-btn {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 6px;
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 60px;
-        height: 60px;
-        background: var(--text-main);
-        border-radius: 50%;
-        z-index: 2000;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        cursor: pointer;
-    }
-
-    .bar {
-        width: 24px;
-        height: 2px;
-        background-color: var(--bg-color);
-        transition: 0.4s;
-    }
-
-    .mobile-menu-btn.open .bar-1 {
-        transform: rotate(45deg) translate(5px, 6px);
-    }
-
-    .mobile-menu-btn.open .bar-2 {
-        transform: rotate(-45deg) translate(5px, -6px);
-    }
-
-    .mobile-menu-overlay {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(10, 10, 12, 0.95);
-        backdrop-filter: blur(20px);
-        z-index: 1500;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.4s;
-    }
-
-    .mobile-menu-overlay.active {
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    .mobile-links {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
-    }
-
-    .mobile-link {
-        font-size: 2rem;
-        font-weight: 700;
-        color: var(--text-main);
-        text-decoration: none;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: color 0.3s;
-    }
-
-    .mobile-link:hover {
-        color: var(--accent);
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr !important;
-        gap: 20px !important;
-    }
-
-    .skill-tag {
-        white-space: normal;
-        height: auto;
-        text-align: center;
-        max-width: 100%;
-        font-size: 0.9rem;
-        line-height: 1.4;
-        padding: 8px 15px;
-    }
-}
-/* --- EXPERIENCE TIMELINE --- */
 .timeline-container {
     position: relative;
     max-width: 1000px;
@@ -514,7 +356,6 @@ input:checked + .slider:before {
     padding: 20px 0;
 }
 
-/* Pionowa linia */
 .timeline-line {
     position: absolute;
     left: 50%;
@@ -534,7 +375,6 @@ input:checked + .slider:before {
     width: 100%;
 }
 
-/* Neonowa Kropka na linii */
 .timeline-dot {
     position: absolute;
     left: 50%;
@@ -550,7 +390,6 @@ input:checked + .slider:before {
     transition: 0.3s;
 }
 
-/* Pozycja Daty (Lewa strona na Desktopie) */
 .timeline-date {
     position: absolute;
     left: 0;
@@ -564,18 +403,16 @@ input:checked + .slider:before {
     font-size: 1.2rem;
 }
 
-/* Pozycja Karty (Prawa strona na Desktopie) */
 .timeline-content {
     width: 45%;
-    margin-left: 55%; /* Przesuwamy na prawo */
+    margin-left: 55%;
     padding: 30px;
-    /* Styl przejęty z glass-card, ale dodajemy specyficzne: */
-    border-left: 3px solid transparent; /* Przygotowanie pod hover */
+    border-left: 3px solid transparent; 
     transition: 0.4s;
 }
 
 .timeline-content:hover {
-    border-left: 3px solid var(--accent); /* Świecący pasek z boku */
+    border-left: 3px solid var(--accent);
 }
 
 .timeline-item:hover .timeline-dot {
@@ -583,7 +420,6 @@ input:checked + .slider:before {
     transform: translateX(-50%) scale(1.3);
 }
 
-/* Styl listy zadań (wygląd terminala) */
 .job-list {
     list-style: none;
     padding: 0;
@@ -596,39 +432,7 @@ input:checked + .slider:before {
     line-height: 1.5;
 }
 
-/* --- RWD TIMELINE (Mobile) --- */
-@media (max-width: 768px) {
-    .timeline-line {
-        left: 20px; /* Linia przesuwa się na lewo */
-    }
-    
-    .timeline-item {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 50px; /* Miejsce na linię */
-        width: auto;
-    }
 
-    .timeline-dot {
-        left: 20px; /* Kropka na linii */
-        transform: translateX(-50%);
-    }
-
-    .timeline-date {
-        position: relative;
-        width: 100%;
-        text-align: left;
-        padding-right: 0;
-        margin-bottom: 10px;
-        padding-left: 10px;
-    }
-
-    .timeline-content {
-        width: 100%;
-        margin-left: 0; /* Reset marginesu */
-    }
-}
-/* --- EDUCATION SECTION --- */
 .edu-container {
     display: flex;
     flex-direction: column;
@@ -639,34 +443,31 @@ input:checked + .slider:before {
 
 .edu-card {
     display: flex;
-    align-items: center; /* Wyrównanie do środka w pionie */
+    align-items: center; 
     justify-content: space-between;
     gap: 30px;
     padding: 30px 40px;
-    border-left: 3px solid transparent; /* Pasek przygotowany pod hover */
+    border-left: 3px solid transparent; 
     transition: 0.3s;
 }
 
-/* Efekt najechania: Limonkowy pasek z lewej + zmiana tła */
 .edu-card:hover {
     border-left-color: var(--accent);
     background: rgba(255, 255, 255, 0.08);
 }
 
-/* Rok (Wygląda jak numer seryjny) */
 .edu-year {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--accent);
     opacity: 0.8;
-    min-width: 140px; /* Stała szerokość, żeby teksty były równo */
+    min-width: 140px;
     font-family: 'Space Grotesk', monospace;
     letter-spacing: -1px;
 }
 
-/* Środek karty */
 .edu-content {
-    flex-grow: 1; /* Zajmuje całą wolną przestrzeń */
+    flex-grow: 1;
 }
 
 .edu-content h3 {
@@ -681,7 +482,6 @@ input:checked + .slider:before {
     margin-bottom: 5px;
 }
 
-/* Mały tag z opisem (np. specjalizacja) */
 .edu-tag {
     display: inline-block;
     font-size: 0.85rem;
@@ -707,27 +507,6 @@ input:checked + .slider:before {
     filter: drop-shadow(0 0 8px var(--accent));
 }
 
-@media (max-width: 768px) {
-    .edu-card {
-        flex-direction: column; 
-        align-items: flex-start;
-        gap: 15px;
-        padding: 25px;
-        position: relative;
-    }
-
-    .edu-year {
-        font-size: 1.2rem;
-        min-width: auto;
-        margin-bottom: 5px;
-    }
-
-    .edu-icon {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-    }
-}
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1.2fr; 
@@ -795,22 +574,26 @@ input:checked + .slider:before {
 
 .copy-tooltip {
     position: absolute;
-    top: -35px;
-    right: 0;
+    top: 10px;
+    right: 10px;
     background: var(--accent);
     color: var(--bg-color);
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
     font-weight: 700;
     opacity: 0;
-    transform: translateY(10px);
-    transition: 0.3s;
+    visibility: hidden;
+    transform: translateY(-10px);
+    
+    transition: all 0.3s ease;
     pointer-events: none;
+    z-index: 10;
 }
 
 .copy-tooltip.show {
     opacity: 1;
+    visibility: visible;
     transform: translateY(0);
 }
 
@@ -874,7 +657,6 @@ input:checked + .slider:before {
     100% { opacity: 1; transform: scale(1); }
 }
 
-/* --- CONTACT GRID --- */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -946,22 +728,27 @@ input:checked + .slider:before {
 
 .copy-tooltip {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     background: var(--accent);
     color: var(--bg-color);
-    padding: 4px 10px;
-    border-radius: 4px;
+    padding: 5px 12px;
+    border-radius: 6px;
     font-size: 0.75rem;
     font-weight: 700;
     opacity: 0;
-    transform: translateY(-10px);
-    transition: 0.3s;
+    visibility: hidden;
+    transform: translateY(10px);
+    
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     pointer-events: none;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .copy-tooltip.show {
     opacity: 1;
+    visibility: visible;
     transform: translateY(0);
 }
 
@@ -988,12 +775,175 @@ input:checked + .slider:before {
     background: rgba(255,255,255,0.05);
 }
 
+/* =========================================
+   RWD: WIDOK TELEFONICZNY (MAX-WIDTH 768PX)
+   Wklej to na samym końcu pliku style.css
+   ========================================= */
+
 @media (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
+    
+    /* --- 1. GLOBALNE --- */
+    /* Ukrywamy kursor (na telefonie jest dotyk) */
+    .custom-cursor { display: none; }
+    * { cursor: auto !important; }
+
+    /* Poprawki tła (żeby bryły nie zasłaniały tekstu) */
+    .shape-1 { top: 5%; left: -30%; width: 90vw; height: 90vw; transform: rotate(20deg); }
+    .shape-2 { top: 60%; right: -40%; left: auto; width: 110vw; height: 110vw; transform: rotate(40deg); }
+    .shape-3 { top: 130%; left: -20%; width: 80vw; height: 80vw; transform: rotate(10deg); }
+    .shape-4 { top: 200%; right: -20%; width: 70vw; height: 70vw; }
+    .shape-5 { top: 280%; left: -30%; width: 90vw; height: 90vw; }
+    .shape-6 { top: 360%; right: -40%; width: 100vw; height: 100vw; }
+    .shape-7 { top: 450%; left: 0%; width: 120vw; height: 120vw; }
+
+    /* --- 2. NAWIGACJA --- */
+    .desktop-nav { display: none; } /* Ukrywamy pasek z PC */
+    
+    .mobile-menu-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background: var(--text-main);
+        border-radius: 50%;
+        z-index: 2000;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
     
+    /* Paski hamburgera */
+    .bar {
+        width: 24px;
+        height: 2px;
+        background-color: var(--bg-color);
+        transition: 0.4s;
+    }
+    .mobile-menu-btn.open .bar-1 { transform: rotate(45deg) translate(5px, 6px); }
+    .mobile-menu-btn.open .bar-2 { transform: rotate(-45deg) translate(5px, -6px); }
+
+    /* Nakładka menu */
+    .mobile-menu-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw; height: 100vh;
+        background: rgba(10, 10, 12, 0.95);
+        backdrop-filter: blur(20px);
+        z-index: 1500;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s;
+    }
+    .mobile-menu-overlay.active { opacity: 1; pointer-events: auto; }
+
+    .mobile-links { display: flex; flex-direction: column; gap: 30px; text-align: center; }
+    .mobile-link {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--text-main);
+        text-decoration: none;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: color 0.3s;
+    }
+    .mobile-link:hover { color: var(--accent); }
+
+    /* --- 3. SKILLS (UMIEJĘTNOŚCI) --- */
+    .skills-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    .skill-tag {
+        white-space: normal;
+        height: auto;
+        text-align: center;
+        max-width: 100%;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        padding: 8px 15px;
+    }
+
+    /* --- 4. EXPERIENCE (TIMELINE - NAPRAWA DATY) --- */
+    .timeline-line { left: 20px; }
+    
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0; 
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .timeline-dot {
+        left: 20px;
+        transform: translateX(-50%);
+        top: 5px; /* Dopasowanie do wysokości daty */
+    }
+
+    .timeline-date {
+        position: relative;
+        width: 100%;
+        text-align: left;
+        /* TO ODSUWA DATĘ OD KROPKI: */
+        padding-left: 50px; 
+        margin-bottom: 10px;
+    }
+
+    .timeline-content {
+        width: 100%;
+        margin-left: 0;
+        /* Odsunięcie treści od krawędzi (żeby linia nie wchodziła na tekst) */
+        padding-left: 50px; 
+        border-left: none; /* Usuwamy pasek hover na mobile, bo i tak nie ma myszki */
+    }
+
+    /* --- 5. EDUCATION --- */
+    .edu-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 25px;
+        position: relative;
+    }
+    .edu-year {
+        font-size: 1.2rem;
+        min-width: auto;
+        margin-bottom: 5px;
+    }
+    .edu-icon {
+        position: absolute;
+        top: 25px; right: 25px;
+    }
+
+    /* --- 6. CONTACT HUB --- */
+    .contact-container,
+    .contact-grid {
+        grid-template-columns: 1fr; /* Jeden pod drugim */
+    }
     .contact-hub {
         padding: 30px 20px;
+    }
+    .tile-value {
+        /* To najważniejsze: pozwala łamać długie słowa (jak email) */
+        word-break: break-all; 
+        overflow-wrap: break-word;
+        white-space: normal;
+        
+        /* Zmniejszamy trochę czcionkę, żeby więcej się zmieściło w jednej linii */
+        font-size: 0.9rem; 
+        line-height: 1.3;
+    }
+
+    /* Opcjonalnie: Zmniejszamy marginesy wewnątrz kafelka, by dać więcej miejsca na tekst */
+    .contact-tile {
+        padding: 20px 10px; /* Mniej po bokach */
     }
 }
