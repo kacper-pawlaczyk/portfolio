@@ -33,7 +33,7 @@ function startSiteAnimations() {
     });
 }
 
-// --- 2. Tłumaczenie (FIX NA SKACZĄCĄ RAMKĘ - FLIP Technique) ---
+// --- 2. Tłumaczenie ---
 const langToggle = document.getElementById('lang-toggle');
 const labelPl = document.getElementById('label-pl');
 const labelEn = document.getElementById('label-en');
@@ -120,7 +120,7 @@ if (langToggle) {
     });
 }
 
-// --- 3. MENU MOBILNE (NOWOŚĆ) ---
+// --- 3. MENU MOBILNE ---
 const mobileBtn = document.querySelector('.mobile-menu-btn');
 const mobileOverlay = document.querySelector('.mobile-menu-overlay');
 const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -292,7 +292,7 @@ gsap.ticker.add(() => {
         });
     });
 });
-// --- 8. CONTACT HUB LOGIC (COPY TO CLIPBOARD) ---
+// --- 8. CONTACT HUB LOGIC ---
 
 function setupCopyTile(tileId, valueId) {
     const tile = document.getElementById(tileId);
