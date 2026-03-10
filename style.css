@@ -781,6 +781,15 @@ input:checked + .slider:before {
 
 @media (max-width: 768px) {
     
+    :root {
+        --blur: 10px !important; 
+    }
+    .glass-card, .contact-tile, .edu-card {
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        will-change: transform;
+    }
+    
     .custom-cursor { display: none; }
     * { cursor: auto !important; }
 
