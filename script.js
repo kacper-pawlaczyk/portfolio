@@ -248,8 +248,8 @@ document.querySelectorAll('.hover-magnet').forEach(magnet => {
         const x = e.clientX - rect.left - rect.width / 2;
         const y = e.clientY - rect.top - rect.height / 2;
         gsap.to(magnet, {
-            x: x * 0.3,
-            y: y * 0.3,
+            x: x * 0.1,
+            y: y * 0.1,
             duration: 0.3,
             ease: "power2.out"
         });
