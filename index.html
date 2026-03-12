@@ -45,7 +45,6 @@
 
     <nav class="desktop-nav">
         <a href="#home" class="nav-link hover-magnet" data-en="Home">Start</a>
-        <a href="#about" class="nav-link hover-magnet" data-en="About">O mnie</a>
         <a href="#skills" class="nav-link hover-magnet" data-en="Skills">Umiejętności</a>
         <a href="#experience" class="nav-link hover-magnet" data-en="Experience">Doświadczenie</a>
         <a href="#education" class="nav-link hover-magnet" data-en="Education">Wykształcenie</a>
@@ -60,7 +59,6 @@
     <div class="mobile-menu-overlay">
         <div class="mobile-links">
             <a href="#home" class="mobile-link" data-en="Home">Start</a>
-            <a href="#about" class="mobile-link" data-en="About">O mnie</a>
             <a href="#skills" class="mobile-link" data-en="Skills">Umiejętności</a>
             <a href="#experience" class="mobile-link" data-en="Experience">Doświadczenie</a>
             <a href="#education" class="mobile-link" data-en="Education">Wykształcenie</a>
@@ -69,54 +67,61 @@
     </div>
 
     <section id="home" class="hero">
-        <div class="hero-content">
-            <p class="anim-text" data-en="Hello, I'm Kacper Pawlaczyk">Cześć, nazywam się Kacper Pawlaczyk</p>
+    <div class="hero-split-container">
+        
+        <div class="hero-left">
+            <p class="anim-text" data-en="Kacper Pawlaczyk">Kacper Pawlaczyk</p>
             
             <h1 class="anim-text" data-en="Database<br><span style='color: var(--accent)'>Administrator</span>.">
-                Administruję<br><span style="color: var(--accent)">Bazami Danych</span>.
+                Administrator<br><span style="color: var(--accent)">Baz Danych</span>.
             </h1>
             
-            <p class="anim-text" data-en="Mid IT Specialist. <br> Specializing in database management and maintenance">
-                Specjalista w Dziale IT. <br> Specjalizuję się w zarządzaniu i utrzymywaniu baz danych.
-            </p>
-<!--            
-            <div style="margin-top: 30px;">
-                <a href="#work" class="cta-btn hover-magnet anim-text" data-en="View My Work">Zobacz moje prace</a>
-            </div>
-        -->
-        </div>
-    </section>
+            <div class="hero-highlights">
+                <div class="highlight-item hover-magnet">
+                    <div class="highlight-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                    </div>
+                    <div class="highlight-text">
+                        <strong data-en="Database & App Administration">Administracja Bazami Danych i Aplikacjami</strong>
+                        <span data-en=">Optimization and maintenance of relational databases (PostgreSQL, MySQL);<br>>Backups, monitoring, and data purging;<br>>User administration and permissions;<br>>Deploying/executing scripts;<br>>Creating automation scripts.">>Optymalizacja i utrzymanie relacyjnych baz (PostgreSQL, MySQL);<br>>Backupy, monitoring i czyszczenie danych; <br>>Administracja użytkownikami i uprawnieniami; <br>>Wgrywanie i wykonywanie skryptów; <br>>Tworzenie dedykowanych rozwiązań automatyzujących.</span>
+                    </div>
+                </div>
 
-    <section id="about">
-        <h2 style="text-align:center; margin-bottom: 30px;" data-en="Something about me">Parę słów o mnie</h2>
-        <div class="glass-card scroll-reveal" style="width: 100%;">
-            <div class="skills-wrapper">
-                <div class="skill-tag hover-magnet" data-en="
-                IT Specialist with over two years of experience, combining professional work with engineering studies in Computer Science. 
-                <br><br>
-                I specialize in database administration and Linux server management, ensuring system optimization and performance.
-                <br><br>
-                Within a strategic corporate project, I serve as a Key-User and Local Administrator. Thanks to my responsible approach and composure, I was entrusted with the role of Lead Administrator for the key database. In my daily work, I prioritize efficient communication and the highest standards of task execution.
-                <br><br>
-                Outside of work, I maintain a work-life balance through sports and music, which serve as my getaway and a source of new energy.">
-                
-                Specjalista IT z ponad dwuletnim doświadczeniem, łączący pracę zawodową ze studiami inżynierskimi na kierunku Informatyka. 
-                <br><br>
-                Specjalizuję się w administracji bazami danych oraz zarządzaniu serwerami Linux, dbając o optymalizację i wydajność systemów.
-                <br><br>
-                W ramach strategicznego projektu firmy pełnię rolę Key-Usera oraz Administratora Lokalnego. Dzięki odpowiedzialnemu podejściu i opanowaniu, powierzono mi funkcję głównego administratora kluczowej bazy danych. W codziennej pracy stawiam na sprawną komunikację i najwyższe standardy realizacji zadań.
-                <br><br>
-                Poza pracą dbam o work-life balance poprzez sport i muzykę, które są moją odskocznią i źródłem nowej energii.
-            </div>
-                
-                <!--
-                <div class="skill-tag hover-magnet">React / Next.js</div>
-                <div class="skill-tag hover-magnet">TypeScript</div>
-                <div class="skill-tag hover-magnet">Three.js</div>
-                -->
+                <div class="highlight-item hover-magnet">
+                    <div class="highlight-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><polyline points="4 17 10 11 4 5"></polyline><line x1="19" y1="19" x2="19" y2="19"></line></svg>
+                    </div>
+                    <div class="highlight-text">
+                        <strong data-en="Operating Systems & Server Management">Systemy Operacyjne i Zarządzanie Serwerami</strong>
+                        <span data-en=">Creating, configuring, and managing server environments;<br>>Ongoing maintenance, in-depth log analysis, and monitoring performance metrics.">>Tworzenie, konfiguracja i zarządzanie środowiskami serwerowymi;<br>>Bieżące utrzymanie, analiza logów systemowych oraz monitorowanie wskaźników wydajności (wykresów).</span>
+                    </div>
+                </div>
+
+                <div class="highlight-item hover-magnet">
+                    <div class="highlight-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div class="highlight-text">
+                        <strong data-en="Security & Server Maintenance">Bezpieczeństwo i Utrzymanie Serwerów</strong>
+                        <span data-en=">Ensuring database security;<br>>Configuring servers;<br>>Implementing hardware encryption;<br>>Comprehensive infrastructure care.">>Zabezpieczanie danych w bazach;<br>>Konfiguracja serwerów;<br>>Sprzętowe szyfrowanie;<br>>Kompleksowe dbanie o kondycję infrastruktury.</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+
+        <div class="hero-right">
+            <div class="hero-photo-container">
+                <div class="photo-glow"></div>
+                <img src="photo/photo.png" alt="photo" class="hero-photo" data-en="">
+            </div>
+            <a href="#contact" class="hero-contact-link hover-magnet">
+                <span style="color: var(--accent)" data-en="Contact Me">Skontaktuj się ze mną</span>
+                <svg style="color: var(--accent)" data-en="" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+            </a>
+        </div>
+
+    </div>
+</section>
 
 <section id="skills">
     <h2 class="section-title scroll-reveal" style="text-align: center; margin-bottom: 60px;" data-en="Skills <span style='font-size: 1rem; color: var(--accent)'>// Hard/Soft</span>">
@@ -134,6 +139,7 @@
                     <div class="skills-wrapper">
                         <div class="skill-tag hover-magnet" data-en="PostgreSQL/MySQL">PostgreSQL/MySQL</div>
                         <div class="skill-tag hover-magnet" data-en="SQL">SQL</div>
+                        <div class="skill-tag hover-magnet" data-en="RDBMS">RDBMS</div>
                         <div class="skill-tag hover-magnet" data-en="DBMS: DBeaver/pgAdmin">DBMS: DBeaver/pgAdmin</div>
                         
                         <div class="skill-tag hover-magnet" data-en="Prometheus">Prometheus</div>
@@ -295,7 +301,7 @@
                 <div class="edu-year" data-en="2023 - present">2023 - obecnie</div>
                 <div class="edu-content">
                     <h3 data-en="Bachelor of Engineering: Computer Science">Inżynier: Informatyka</h3>
-                    <p data-en="WSB Merito University in Chorzow">Uniwersytet WSB Merito w Chorzowie</p>
+                    <p data-en="WSB Merito University in Chorzow">Uniwersytet WSB Merito w Chorzowie//zaocznie</p>
                     <span class="edu-tag" data-en="Specialization: Database Administrator">Specjalizacja: Administrator Baz Danych</span>
                 </div>
                 <div class="edu-icon">
@@ -325,7 +331,7 @@
 
 <section id="contact">
         <h2 class="section-title scroll-reveal" style="text-align: center; margin-bottom: 60px;" data-en="Contact <span style='font-size: 1rem; color: var(--accent)'>// Connect</span>">
-            Kontakt <span style="font-size: 1rem; color: var(--accent)">// Połącz się</span>
+            Kontakt <span style="font-size: 1rem; color: var(--accent)">// Kontakt</span>
         </h2>
 
         <div class="contact-hub glass-card scroll-reveal">
@@ -335,8 +341,8 @@
                     <span class="status-dot"></span>
                     <span data-en="Status: Open to work">Status: Otwarty na propozycje</span>
                 </div>
-                <h3 style="font-size: 2rem; margin-top: 15px;" data-en="Let's talk business.">Porozmawiajmy o konkretach.</h3>
-                <p style="color: var(--text-muted); margin-top: 10px;" data-en="Choose your preferred channel below.">Wybierz preferowany kanał komunikacji.</p>
+                <h3 style="font-size: 2rem; margin-top: 15px;" data-en="Let's talk.">Skontaktuj się.</h3>
+                <p style="color: var(--text-muted); margin-top: 10px;" data-en="Choose your channel to contact.">Wybierz sposób komunikacji.</p>
             </div>
 
             <div class="contact-grid">

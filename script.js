@@ -89,7 +89,7 @@ if (langToggle) {
             });
 
             gsap.set(translatableElements, {
-                scale: 1.05,
+                scale: 1.02,
                 y: 5
             });
 
@@ -203,18 +203,17 @@ revealElements.forEach(el => {
 });
 
 // --- 5. Desktop Navigation Scroll ---
-document.querySelectorAll('.desktop-nav a, .cta-btn').forEach(link => {
-    link.addEventListener('click', (e) => {
-        const targetId = link.getAttribute('href');
-        if (targetId.startsWith('#')) {
-            e.preventDefault();
-            gsap.to(window, {
-                duration: 1.5,
-                scrollTo: {
-                    y: targetId,
-                    offsetY: 50
-                },
-                ease: "power4.inOut"
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
             });
         }
     });
